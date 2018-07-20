@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "image": "./images/blue.jpg"
+  },
+  {
+    "id": 2,
+    "image": "./images/green.jpg"
+  },
+  {
+    "id": 3,
+    "image": "./images/purple.png"
+  },
+  {
+    "id": 4,
+    "image": "./images/red.png"
+  },
+  {
+    "id": 5,
+    "image": "./images/yellow.jpg"
+  }
+]
