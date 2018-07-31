@@ -1,22 +1,32 @@
 [
   {
     "id": 1,
-    "image": "./images/blue.jpg"
+    "image": "./images/blue.jpg",
+    "click": false
   },
   {
     "id": 2,
-    "image": "./images/green.jpg"
+    "image": "./images/green.jpg",
+    "click": false
   },
   {
     "id": 3,
-    "image": "./images/purple.png"
+    "image": "./images/purple.png",
+    "click": false
   },
   {
     "id": 4,
-    "image": "./images/red.png"
+    "image": "./images/red.png",
+    "click": false
   },
   {
     "id": 5,
-    "image": "./images/yellow.jpg"
+    "image": "./images/yellow.jpg",
+    "click": false
+  },
+  {
+    "id": 6,
+    "image": "./images/orange.png",
+    "click": false
   }
 ]
