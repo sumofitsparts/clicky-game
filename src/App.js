@@ -13,16 +13,13 @@ class App extends React.Component {
     click: false
   };
 
-//reshuffle function: swapping logic
-
-  // handleIncrement increases this.state.count by 1
   handleIncrement = (click) => {
-    // We always use the setState method to update a component's state
     if (click === false) {
     this.setState({ count: this.state.count + 1 });
     console.log(click)
     this.score()
     this.reshuffle()
+    
     this.setState({click: true})
     } else {
       console.log("game over")
@@ -30,39 +27,27 @@ class App extends React.Component {
   };
 
   reshuffle = () => {
-    //swap
-//run loop
-//create temp var
-// temp = colors[i]
-// colors[i] = colors[i+1]
-// colors[i+1] = temp
-//random number
-
-//shifting array left or right
-
-// shuffleData = data => {
-//   let i = data.length - 1;
-//   while (i > 0) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     const temp = data[i];
-//     data[i] = data[j];
-//     data[j] = temp;
-//     i--;
-//   }
-//   return data;
-// };
-
-
+    this.shuffleData()
   }
+
+shuffleData = Color => {
+  let i = Color.length - 1;
+  while (i > 0) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = Color[i];
+    Color[i] = Color[j];
+    Color[j] = temp;
+    i--;
+  }
+  return Color;
+};
+
+
+  
 
   score = () => {
     this.setState({ score: this.state.score + 1 });
   }
-
-  //to end game if count ==0 play if count == 1 game ends
-
-
-  //count 0 increment total by 1 if count score is greater than total then top score is top score else if total is greater than top score then total is top score
 
   render() {
     return (
