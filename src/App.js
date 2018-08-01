@@ -18,29 +18,30 @@ class App extends React.Component {
     this.setState({ count: this.state.count + 1 });
     console.log(click)
     this.score()
-    this.reshuffle()
+    // this.reshuffle()
     
-    this.setState({click: true})
-    } else {
-      console.log("game over")
+    // this.setState({click: true})
+    // } else {
+    //   this.setState({count: 0});
+    //   alert("game over")
     }
   };
 
-  reshuffle = () => {
-    this.shuffleData()
-  }
+//   reshuffle = () => {
+//     this.shuffleData()
+//   }
 
-shuffleData = Color => {
-  let i = Color.length - 1;
-  while (i > 0) {
-    const j = Math.floor(Math.random() * (i + 1));
-    const temp = Color[i];
-    Color[i] = Color[j];
-    Color[j] = temp;
-    i--;
-  }
-  return Color;
-};
+// shuffleData = Color => {
+//   let i = Color.length - 1;
+//   while (i > 0) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     const temp = Color[i];
+//     Color[i] = Color[j];
+//     Color[j] = temp;
+//     i--;
+//   }
+//   return Color;
+// };
 
 
   
